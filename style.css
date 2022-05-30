@@ -1,0 +1,81 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.oppic1, .oppic2, .oppic3{
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+.oppic1{
+    background-image: url(./images/OnePiece1.jpg);
+    min-height: 100%;
+}
+
+.oppic2{
+    background-image: url(./images/OnePiece2.jpg);
+    min-height: 600px;
+}
+
+.oppic3{
+    background-image: url(./images/The-Going-Merry-One-Piece-header.jpg);
+    min-height: 600px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 350px;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color:_#666
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.oppic1text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.oppic1text .border{
+    background-color: #111;
+    color: #d4af37;
+    padding: 20px;
+}
+
+@media(max-width:1000px){
+    .section{
+        padding: 50px;
+    }
+}
+
+@media(max-width:720px){
+    .oppic1 .oppic2 .oppic3{
+        background-attachment: scroll;
+    }
+
+    .section{
+        padding: 50px;
+    }
+}
